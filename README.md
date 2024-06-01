@@ -10,7 +10,7 @@ The QDOB is used to estimate and compensate for a quasi-periodic disturbance, in
 
 When you want to tune the hyperparameters, see the paper [1].
 
-[1] Hisayoshi Muramatsu, “Periodic/Aperiodic Motion Control Using Periodic/Aperiodic Separation Filter,” IEEE Transactions on Industrial Electronics, vol. 67, no. 9, pp. 7649-7658, Sep. 2020.
+[1] Hisayoshi Muramatsu, “Quasi-periodic Disturbance Observer for Wideband Harmonic Suppression,” arXiv, Jun. 2024.
 (https://ieeexplore.ieee.org/abstract/document/8858034)
 
 ## Licence
