@@ -1,6 +1,6 @@
 # QDOB - Quasi-periodic Disturbance Observer
 
-This is a control algorithm of the quasi-periodic disturbance observer (QDOB) proposed in [1]. It is implemented for a position control simulation of a mechanical system 1/(Ms^2) under harmonic disturbances with an outer proportional-derivative position control in C++.
+This is a control algorithm of the quasi-periodic disturbance observer (QDOB) proposed in [1]. It is implemented for a position control simulation of a mechanical system 1/(Ms^2) under harmonic disturbances with an outer proportional-derivative position controller in C++.
 
 The QDOB is used to estimate and compensate for a quasi-periodic disturbance, including harmonics. It is two-degree-of-freedom control affecting only disturbance suppression and is usually used with command tracking control. The QDOB has the following three characteristics.
 
