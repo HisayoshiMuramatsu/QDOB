@@ -1,7 +1,7 @@
 /**
 	QDOB - Quasi-periodic Disturbance Observer
 	@author: Hisayoshi Muramatsu
-	@date: 2024.06.01
+	@date: 2024.06.02
 */
 
 #include "Delay.hpp"

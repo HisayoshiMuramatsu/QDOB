@@ -1,7 +1,7 @@
 /**
 	QDOB - Quasi-periodic Disturbance Observer
 	@author: Hisayoshi Muramatsu
-	@date: 2024.06.01
+	@date: 2024.06.02
 */
 
 #include <iostream>
@@ -37,9 +37,9 @@ int main(){
 	double r   = 0; // [N]; Reference
 
 	// QDOB
-	const int mu = 1;       // 0: estimation only, 1: compensation
-	const int l = 3;        // The number of stages of the linear-phase LPF
-	const int Nmax = 256;   // The maximum order of the LPF at each stage
+	const int mu    = 1;    // 0: estimation only, 1: compensation
+	const int l     = 3;    // The number of stages of the linear-phase LPF
+	const int Nmax  = 256;  // The maximum order of the LPF at each stage
 	const double wa = 100;  // [rad/s] << wb;  Cutoff frequency for harmonics suppression.
 	const double wb = 1000; // [rad/s] >> wa;  Cutoff frequency for stabilization.
 	const double wc = w0/4; // [rad/s] < w0/2; Cutoff frequency for suppression bandwidth surrounding harmonics.
@@ -66,10 +66,11 @@ int main(){
 
 		// Display
 		if( (int)round(t/T)%(int)round(1/T) == 0 ){
-			std::cout << "Time : "      << t     << " s" << std::endl;
-			std::cout << "Error : "     << cmd-y << " m" << std::endl;
-			std::cout << "Est. error: " << v-hd  << " N" << std::endl;
-			std::cout << "RMSE : "      << rmse  << " m" << std::endl;
+			std::cout                         << "Time        : " << t         << " s" << std::endl;
+			std::cout << std::setprecision(3) << "Disturbance : " << v         << " N" << std::endl;
+			std::cout << std::setprecision(3) << "Estimate    : " << hd        << " N" << std::endl;
+			std::cout << std::setprecision(3) << "Ctrl RMSE   : " << 1000*rmse << " mm" << std::endl;
+			std::cout << " ----------------- " << std::endl;
 		}
 
 		ofs << t << " " << cmd << " " << y << " " << v << " " << hd << std::endl; // Data output
@@ -99,9 +100,9 @@ double Motor(const double& u, const double& v, const double& M, const double& T)
 }
 
 double PDctrl(const double& cmd, const double& y, const double& T){
-	const double Kp = 2500; // Proportional gain
-	const double Kd = 100;  // Derivative gain
-	const double g  = 100;  // Cutoff frequency for the pseudo differentiation with a LPF
+	const double Kp = 30*30; // Proportional gain
+	const double Kd = 2*30;  // Derivative gain
+	const double g  = 100;   // Cutoff frequency for the pseudo differentiation with a LPF
 	static double e[2]={}, de[2]={};
 
 	de[1] = de[0];
@@ -111,5 +112,4 @@ double PDctrl(const double& cmd, const double& y, const double& T){
 	de[0] = ((2-g*T)/(2+g*T))*de[1] + (2*g/(2+g*T))*(e[0]-e[1]); // Derivative of error
 
 	return Kp*e[0] + Kd*de[0];
-
 }

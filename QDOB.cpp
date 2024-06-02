@@ -1,7 +1,7 @@
 /**
 	QDOB - Quasi-periodic Disturbance Observer
 	@author: Hisayoshi Muramatsu
-	@date: 2024.06.01
+	@date: 2024.06.02
 */
 
 #include <vector>
@@ -43,7 +43,6 @@ QDOB::QDOB(
 
 	for(int i(0);i<l;i++) ThDelay[i] = new Delay(2*bL);
 	LamDelay = new Delay(eta);
-
 }
 
 QDOB::~QDOB(){
@@ -67,7 +66,7 @@ double QDOB::Ctrl(double& hd, const double& r, const double& y_){
 }
 
 double QDOB::fun_P(const double& lam_k1){
-	const double theta0 = LamDelay->Memory(lam_k1,1-eta); // lam_(k+eta)
+	const double theta0 = LamDelay->Memory(lam_k1,1-eta);
 		LamDelay->Update(lam_k1);
 	for(int i(0);i<l;i++){
 		theta[i]=0;

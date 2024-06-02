@@ -1,11 +1,11 @@
 /**
 	QDOB - Quasi-periodic Disturbance Observer
 	@author: Hisayoshi Muramatsu
-	@date: 2024.06.01
+	@date: 2024.06.02
 */
 
-#ifndef DEF_Delay
-#define DEF_Delay
+#ifndef DEF_DELAY
+#define DEF_DELAY
 
 #include <vector>
 #include <math.h>

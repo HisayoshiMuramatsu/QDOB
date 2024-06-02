@@ -1,7 +1,7 @@
 /**
 	QDOB - Quasi-periodic Disturbance Observer
 	@author: Hisayoshi Muramatsu
-	@date: 2024.06.01
+	@date: 2024.06.02
 */
 
 #ifndef DEF_QDOB
@@ -23,9 +23,8 @@ public:
 	);
 	~QDOB();
 	QDOB(const QDOB&)=delete;            // copy ctor
-	QDOB(QDOB&&)=delete;                 // move ctor
 	QDOB& operator=(const QDOB&)=delete; // copy assignment
-	QDOB& operator=(QDOB&&)=delete;      // move assignment
+
 	// Controller based on the QDOB
 	double Ctrl(double& hd, const double& r, const double& y);
 
