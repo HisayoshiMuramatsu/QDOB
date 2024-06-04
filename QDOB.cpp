@@ -1,7 +1,7 @@
 /**
 	QDOB - Quasi-periodic Disturbance Observer
 	@author: Hisayoshi Muramatsu
-	@date: 2024.06.02
+	@date: 2024.06.04
 */
 
 #include <vector>
