@@ -8,7 +8,7 @@ The QDOB is used to estimate and compensate for a quasi-periodic disturbance, in
 3. Non-amplification of aperiodic disturbances
 4. Non-deviation of harmonic suppression frequencies
 
-When you want to tune the hyperparameters, see the preprint [1].
+See the preprint [1] for details.
 
 [1] Hisayoshi Muramatsu, “Quasiperiodic Disturbance Observer for Wideband Harmonic Suppression,” arXiv, arXiv:2406.00362, Jan. 2025.
 (https://arxiv.org/abs/2406.00362)
