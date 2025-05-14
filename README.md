@@ -1,17 +1,19 @@
 # QDOB - Quasiperiodic Disturbance Observer
 
-This is a control algorithm of the quasiperiodic disturbance observer (QDOB) proposed in the preprint [1]. It is implemented for a position control simulation of a mechanical system 1/(Ms^2) under harmonic disturbances with an outer proportional-derivative position controller in C++.
+This repository provides a C++ implementation of the quasiperiodic disturbance observer (QDOB), as proposed in [1], for position control of a mechanical system under harmonic disturbances. The QDOB is integrated with an outer proportional-derivative controller in a simulation setting.
 
-The QDOB is used to estimate and compensate for a quasi-periodic disturbance, including harmonics. It is two-degree-of-freedom control affecting only disturbance suppression and is usually used with command tracking control. The QDOB has the following characteristics.
+The QDOB is designed to estimate and compensate for quasiperiodic disturbances, which include harmonics and waves at surrounding frequencies. It is a two-degree-of-freedom controller that suppresses disturbances without interfering with the tracking control. The QDOB has the following features:
 
-1. Wideband harmonic elimination, which is robustness against quasiperiodicity (variations of periodic disturbances)
-3. Non-amplification of aperiodic disturbances
-4. Non-deviation of harmonic suppression frequencies
+1. Wideband harmonic suppression robust against quasiperiodicity
+2. Non-amplification of aperiodic disturbances
+3. Non-deviation of harmonic suppression frequencies
 
-See the preprint [1] for details.
+See the paper [1] for details.
 
-[1] Hisayoshi Muramatsu, “Quasiperiodic Disturbance Observer for Wideband Harmonic Suppression,” arXiv, arXiv:2406.00362, Jan. 2025.
-(https://arxiv.org/abs/2406.00362)
+## Reference
+
+[1] Hisayoshi Muramatsu, “Quasiperiodic Disturbance Observer for Wideband Harmonic Suppression,” IEEE Transactions on Control Systems Technology, Accepted. DOI: [10.1109/TCST.2025.3566560]
+(arXiv: [2406.00362](https://arxiv.org/abs/2406.00362))
 
 ## Licence
 
