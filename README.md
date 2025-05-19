@@ -1,6 +1,6 @@
 # QDOB - Quasiperiodic Disturbance Observer
 
-This repository provides a C++ implementation of the quasiperiodic disturbance observer (QDOB), as proposed in [1], for position control of a mechanical system \((1/Ms^2)\) under harmonic disturbances. The QDOB is integrated with an outer proportional-derivative controller in a simulation setting.
+This repository provides a C++ implementation of the quasiperiodic disturbance observer (QDOB), as proposed in [1], for position control of a mechanical system (1/Ms^2) under harmonic disturbances. The QDOB is integrated with an outer proportional-derivative controller in a simulation setting.
 
 The QDOB is designed to estimate and compensate for quasiperiodic disturbances, which include harmonics and waves at surrounding frequencies. It is a two-degree-of-freedom controller that suppresses disturbances without interfering with the tracking control. The QDOB has the following features:
 
