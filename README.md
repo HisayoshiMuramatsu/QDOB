@@ -12,8 +12,8 @@ See the paper [1] for details.
 
 ## Reference
 
-[1] Hisayoshi Muramatsu, “Quasiperiodic Disturbance Observer for Wideband Harmonic Suppression,” IEEE Transactions on Control Systems Technology, Accepted. DOI: [10.1109/TCST.2025.3566560]
-(arXiv: [2406.00362](https://arxiv.org/abs/2406.00362))
+[1] Hisayoshi Muramatsu, “Quasiperiodic Disturbance Observer for Wideband Harmonic Suppression,” IEEE Transactions on Control Systems Technology, 2025. DOI: [10.1109/TCST.2025.3566560]
+(https://ieeexplore.ieee.org/document/11006295)
 
 ## Licence
 
