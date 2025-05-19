@@ -4,7 +4,7 @@ This repository provides a C++ implementation of the quasiperiodic disturbance o
 
 The QDOB is designed to estimate and compensate for quasiperiodic disturbances, which include harmonics and waves at surrounding frequencies. It is a two-degree-of-freedom controller that suppresses disturbances without interfering with the tracking control. The QDOB has the following features:
 
-1. Wideband harmonic suppression robust against quasiperiodicity
+1. Wideband harmonic suppression robust against quasiperiodicity (variations in frequencies and amplitudes)
 2. Non-amplification of aperiodic disturbances
 3. Non-deviation of harmonic suppression frequencies
 
