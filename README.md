@@ -9,6 +9,8 @@ The QDOB is designed to estimate and compensate for quasiperiodic disturbances, 
 3. Non-deviation of harmonic suppression frequencies
 
 See the paper [1] for details.
+If you intend to modify the QDOB algorithm, it is highly recommended to read the paper.
+Note that modifying the controller in the discrete-time domain can be challenging.
 
 ## Reference
 
