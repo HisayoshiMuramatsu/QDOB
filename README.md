@@ -14,7 +14,7 @@ Note that modifying the controller in the discrete-time domain can be challengin
 
 ## Reference
 
-[1] Hisayoshi Muramatsu, “Quasiperiodic Disturbance Observer for Wideband Harmonic Suppression,” IEEE Transactions on Control Systems Technology, 2025. DOI: [10.1109/TCST.2025.3566560]
+[1] Hisayoshi Muramatsu, “Quasiperiodic Disturbance Observer for Wideband Harmonic Suppression,” IEEE Transactions on Control Systems Technology, vol. 33, no. 5, pp. 1895-1904, Sep. 2025. DOI: [10.1109/TCST.2025.3566560]
 (https://ieeexplore.ieee.org/document/11006295)
 
 ## Licence
